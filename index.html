@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AP02 — Analizador de números</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Analizador de números</h1>
+    <p>Introduce números separados por comas. Ejemplo: <code>3, 5, -2, 10, 7</code></p>
+
+    <form id="form" class="card">
+      <label for="entrada"><strong>Números:</strong></label>
+      <input
+        id="entrada"
+        type="text"
+        placeholder="Ej: 3, 5, -2, 10, 7"
+        autocomplete="off"
+      />
+      <button id="btnAnalizar" type="submit">Analizar</button>
+
+      <!-- Mensajes de error (rojo 2s) -->
+      <div id="mensaje" class="mensaje" aria-live="polite"></div>
+    </form>
+
+    <!-- Resultados -->
+    <section class="card">
+      <h2>Resultados</h2>
+      <div id="salida" class="salida"></div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
